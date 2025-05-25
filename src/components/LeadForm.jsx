@@ -5,8 +5,13 @@ const LeadForm = () => {
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
-    const handleSubmit = (e) =>{
+    const handleSubmit = async (e) =>{
         e.preventDefault()
+        try {
+            
+        } catch (error) {
+            console.log(error)
+        }
     }
     console.log(formData)
     return (
