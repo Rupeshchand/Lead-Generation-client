@@ -9,6 +9,7 @@ const LeadForm = () => {
     const navigate = useNavigate();
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
+        setError(null)
     }
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -21,10 +22,10 @@ const LeadForm = () => {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
-                credentials: "include"
+                credentials: 'include'
             })
             const response = await res.json()
-            console.log(response)
+            setFormData({ name: '', email: '', company: '', message: '' })
             navigate("/")
         } catch (error) {
             console.log(error)

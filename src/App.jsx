@@ -9,7 +9,7 @@ function App() {
     <>
     <Header/>
     <Routes>
-      <Route path="/lead" element={<LeadForm/>} />
+      <Route path="/leadForm" element={<LeadForm/>} />
     </Routes>
     <LeadForm/>
     </>
