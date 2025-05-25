@@ -16,7 +16,7 @@ This is a React-based frontend for the Lead Generation system
 ## Installation
 
     ```bash
-    git clone <https://github.com/Rupeshchand/Lead-Generation-client.git>
+    git clone https://github.com/Rupeshchand/Lead-Generation-client.git
     cd frontend
     npm install
     npm run dev
